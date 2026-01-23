@@ -1,0 +1,235 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape Narsimha Chellaboina} \\ \vspace{1pt}
+    \small 9014972263  $|$ 
+    \href{mailto:chnarsimha986@gmail.com}{\underline{chnarsimha986@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/chellaboina-narsimha-b529b3233}{\underline{LinkedIn}} $|$ 
+    \href{https://github.com/Narsi12}{\underline{GitHub}} $|$
+    \href{https://medium.com/@chnarsimha986}{\underline{Medium Blog}}
+\end{center}
+
+% -----------Professional Summary---------------
+% \section{Professional Summary}
+% \noindent Software Engineer specializing in Python, Django, DRF, and microservices, with a strong focus on building scalable backend systems, optimizing APIs, and leveraging cloud platforms such as AWS and Azure. Proficient in Django ORM, PostgreSQL, MySQL, Redis, and DevOps tools including Docker, Git, and CI/CD pipelines. Known for strong debugging and problem-solving skills in complex backend environments.
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Osmania University}{Hyderabad, TS}
+      {Bachelor of Computer Science}{June. 2017 -- jan 2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+% \section{Experience (2.7 years)}
+\textbf{Mouri Tech — Software Developer(Full Stack)}
+\resumeSubHeadingListStart
+% project 1
+
+\resumeSubheading
+{Project Name: ATD Master Project, Client - American Tire Distributors}{Nov 2022 – Present}
+    {Software Engineer}{Hyderabad, TS}
+\resumeItemListStart
+    \resumeItem{Developed 2 reusable Python templates supporting both Kafka-to-Kafka and Kafka-to-Mongo pipelines, enabling standardized and efficient stream processing across multiple use cases.}
+    \resumeItem{Integrated Prometheus metrics into 10+ pipelines, enhancing observability and accelerating incident detection by 30\%.}
+    \resumeItem{Configured and optimized existing Grafana dashboards to monitor key metrics for all active Kafka pipelines, improving visibility into system performance without duplicating dashboard effort.}
+    \resumeItem{Monitored 24x7 systems using Grafana Loki, Confluent Control Center, Offset Explorer, and MongoDB, maintaining 99.95\% uptime and fulfilling SRE responsibilities.}
+    \resumeItem{Resolved 50+ production incidents, shortening recovery time by 45\% through effective root cause analysis and prompt intervention.}
+    \resumeItem{Led migration of 20+ workflows from Spring Cloud Data Flow (SCDF) to Python-based pipelines, cutting infrastructure costs by 75\% and improving maintainability.}
+    \resumeItem{Tech stack: Python, Kafka, MongoDB, Prometheus, Grafana, Loki, SCDF, Confluent Platform.}
+\resumeItemListEnd
+
+
+% project 2
+\vspace{0.5\baselineskip}
+
+\resumeSubheading
+  {Project Name: AI Translation HUB, Client - Stanley Black \& Decker}{} % Date removed
+  {Software Engineer}{Hyderabad, TS}
+
+\resumeItemListStart
+    \resumeItem{Implemented Azure AI Document Translator REST API, enabling multilingual support across 10+ business units and improving global team collaboration.}
+    \resumeItem{Automated document management workflows by developing an Azure Function App, resulting in a 30\% improvement in operational efficiency.}
+    \resumeItem{Designed and deployed a microservices architecture, enhancing system scalability and reducing deployment downtime by 40\%.}
+    \resumeItem{Optimized database queries and performed in-depth API analysis, accelerating data retrieval by 25\% and improving overall system reliability.}
+    \resumeItem{Resolved 30+ high-priority issues monthly using Azure Application Insights, ensuring continuous availability of translation services.}
+    \resumeItem{Engaged with stakeholders to gather requirements, address queries, and ensure project deliverables met client expectations.}
+    \resumeItem{Tech stack: Python, Django REST Framework, Azure (API Apps, Function Apps, PostgreSQL, Application Insights), Microservices architecture.}
+\resumeItemListEnd
+
+
+
+% project 3
+\vspace{0.5\baselineskip}
+
+\resumeSubheading
+  {Project Name: Client Requisition Tracker, Client - Mouri Tech}{} % Date removed
+  {Software Engineer}{Hyderabad, TS}
+  \resumeItemListStart
+    \resumeItem{Built an email thread API using \texttt{exchangelib} for Outlook integration, improving communication for 5 departments.}
+    \resumeItem{Created a Data Filter API (ORM-based) to track project and employee statuses, powering real-time insights for Power BI dashboards.}
+    \resumeItem{Implemented robust data validation and serialization using \texttt{Pydantic}, reducing runtime errors by 60\% and ensuring clean API responses.}
+    \resumeItem{Created a CI/CD pipeline and automated AWS deployments using GitHub Actions, Docker, and ECS, reducing deployment errors by 70\%.}
+    \resumeItem{Tech stack: Python, FastAPI, AWS (ECR, ECS, PostgreSQL, CloudWatch), React.js.}
+  \resumeItemListEnd
+
+
+
+% project 4
+% need to add space so that will go to the new line
+\vspace{9.5\baselineskip}
+
+\resumeSubheading
+  {Project Name: Solix Data Archiving, Client - Stanley Black \& Decker}{} % Date removed
+  {Python Developer}{Hyderabad, TS}
+
+  \resumeItemListStart
+    \resumeItem{Migrated 200K+ records from SQL Server to MySQL via \texttt{pyodbc} and \texttt{mysql.connector}, reducing downtime by 75\%.}
+    \resumeItem{Restructured database schemas for compatibility, achieving 100\% data integrity post-migration.}
+    \resumeItem{Utilized Solix Tool for database analysis, improving query performance by 25\%.}
+    \resumeItem{Tech stack: Python, Solix, MSSQL, MySQL, AWS.}
+  \resumeItemListEnd
+
+
+      
+
+  \resumeSubHeadingListEnd
+%-----------PROGRAMMING SKILLS-----------
+% \section{Technical Skills}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      Python, Data Structures, Django, MySQL, MongoDB (NoSQL), Git, CI/CD, Algorithms, JavaScript, React, Flask, FastAPI, Kafka, Grafana, Data streams, ETL, Offset Explorer, Anaconda, Pandas, AWS (EC2, S3, Lambda, ECS, EKS), Azure (Web Apps, Function Apps, Application Insights, Azure DevOps), Docker, Kubernetes, pydantic
+%     }}
+% \end{itemize}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Programming Languages:} Python, JavaScript \\
+        \textbf{Web Frameworks:} Django, Flask, FastAPI, React \\
+        \textbf{Databases:} MySQL, MongoDB (NoSQL) \\
+        \textbf{Cloud Platforms:} AWS (EC2, S3, Lambda, ECS, EKS), Azure (Web Apps, Function Apps, Application Insights, Azure DevOps) \\
+        \textbf{DevOps \& Tools:} Git, CI/CD, Docker, Kubernetes, Anaconda \\
+        \textbf{Data \& Streaming:} Kafka, Data Streams, ETL, Offset Explorer, Grafana, Pandas \\
+        \textbf{Libraries \& Utilities:} Pydantic \\
+        \textbf{Core CS:} Data Structures, Algorithms
+    }}
+\end{itemize}
+
+
+
+\section{Achievements \& Awards}
+\resumeItemListStart
+    \resumeItem{Earned a 4-star Gold Badge on HackerRank in Python.}
+    \resumeItem{Winner of AI.4 Hackathon at MouriTech — secured 1st place among 10 competing teams.}
+    \resumeItem{Successfully led a team of four in delivering a full-cycle software project.}
+    \resumeItem{Completed AWS Partner: Cloud Practitioner Essentials (2023) and Docker Essentials certifications.}
+\resumeItemListEnd
+
+
+%-------------------------------------------
+\end{document}
